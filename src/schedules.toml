@@ -258,7 +258,7 @@ color = [92, 2, 125]
 
 [[groups]]
 name = "Annie"
-color = [11, 84, 3]
+color = [133, 138, 126]
 
     [[groups.events]]
     label = "CHEM 237"
@@ -328,7 +328,7 @@ color = [11, 84, 3]
 
 [[groups]]
 name = "Christian"
-color = [209, 25, 19]
+color = [70, 146, 60]
 
     [[groups.events]]
     label = "STAT 400"
