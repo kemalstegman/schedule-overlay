@@ -1,0 +1,485 @@
+[[groups]]
+name = "Gabe"
+color = [255, 0, 127]
+
+    [[groups.events]]
+    label = "AOSC 123"
+    day = 1
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "AOSC 123"
+    day = 3
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "AOSC 123"
+    day = 5
+    start_hour = 11.0
+    end_hour = 12.0
+
+    [[groups.events]]
+    label = "PSYC 234"
+    day = 1
+    start_hour = 15.0
+    end_hour = 16.25
+
+    [[groups.events]]
+    label = "PSYC 234"
+    day = 3
+    start_hour = 15.0
+    end_hour = 16.25
+
+    [[groups.events]]
+    label = "GEOL 204"
+    day = 1
+    start_hour = 17.0
+    end_hour = 18.0
+
+    [[groups.events]]
+    label = "GEOL 204"
+    day = 2
+    start_hour = 9.5
+    end_hour = 10.75
+
+    [[groups.events]]
+    label = "GEOL 204"
+    day = 4
+    start_hour = 9.5
+    end_hour = 10.75
+
+    [[groups.events]]
+    label = "PLSC 110"
+    day = 2
+    start_hour = 11.0
+    end_hour = 12.25
+
+    [[groups.events]]
+    label = "PLSC 110"
+    day = 4
+    start_hour = 11.0
+    end_hour = 12.25
+
+    [[groups.events]]
+    label = "PYSC 100"
+    day = 2
+    start_hour = 15.5
+    end_hour = 17.25
+
+    [[groups.events]]
+    label = "PYSC 100"
+    day = 5
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "FIRE 198"
+    day = 3
+    start_hour = 13.0
+    end_hour = 14.0
+
+[[groups]]
+name = "Juliana"
+color = [206, 74, 255]
+
+    [[groups.events]]
+    label = "KNES 285"
+    day = 1
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "KNES 285"
+    day = 3
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "KNES 285"
+    day = 3
+    start_hour = 11.0
+    end_hour = 12.0
+
+    [[groups.events]]
+    label = "JOUR 289I"
+    day = 1
+    start_hour = 11.0
+    end_hour = 12.25
+
+    [[groups.events]]
+    label = "CHEM 231"
+    day = 1
+    start_hour = 13.0
+    end_hour = 14.0
+
+    [[groups.events]]
+    label = "CHEM 231"
+    day = 3
+    start_hour = 13.0
+    end_hour = 14.0
+
+    [[groups.events]]
+    label = "CHEM 231"
+    day = 5
+    start_hour = 13.0
+    end_hour = 14.0
+
+    [[groups.events]]
+    label = "CHEM 231"
+    day = 2
+    start_hour = 12.5
+    end_hour = 13.25
+
+    [[groups.events]]
+    label = "BSCI 170"
+    day = 1
+    start_hour = 14.0
+    end_hour = 15.0
+
+    [[groups.events]]
+    label = "BSCI 170"
+    day = 3
+    start_hour = 14.0
+    end_hour = 15.0
+
+    [[groups.events]]
+    label = "BSCI 170"
+    day = 5
+    start_hour = 14.0
+    end_hour = 15.0
+
+    [[groups.events]]
+    label = "BSCI 171S"
+    day = 2
+    start_hour = 14.0
+    end_hour = 17.0
+
+    [[groups.events]]
+    label = "CHEM 232S"
+    day = 1
+    start_hour = 15.0
+    end_hour = 18.0
+
+    [[groups.events]]
+    label = "CPSF 101"
+    day = 3
+    start_hour = 15.5
+    end_hour = 17.0
+
+[[groups]]
+name = "Kemal"
+color = [92, 2, 125]
+
+    [[groups.events]]
+    label = "HACS 101"
+    day = 1
+    start_hour = 9.0
+    end_hour = 10.0
+
+    [[groups.events]]
+    label = "HACS 101"
+    day = 3
+    start_hour = 9.0
+    end_hour = 10.0
+
+    [[groups.events]]
+    label = "CMSC 216"
+    day = 1
+    start_hour = 11.0
+    end_hour = 12.0
+
+    [[groups.events]]
+    label = "CMSC 216"
+    day = 3
+    start_hour = 11.0
+    end_hour = 12.0
+
+    [[groups.events]]
+    label = "CMSC 216"
+    day = 2
+    start_hour = 14.0
+    end_hour = 15.25
+
+    [[groups.events]]
+    label = "CMSC 216"
+    day = 4
+    start_hour = 14.0
+    end_hour = 15.25
+
+    [[groups.events]]
+    label = "CMSC 250"
+    day = 1
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "CMSC 250"
+    day = 3
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "CMSC 250"
+    day = 2
+    start_hour = 12.5
+    end_hour = 13.75
+
+    [[groups.events]]
+    label = "CMSC 250"
+    day = 4
+    start_hour = 12.5
+    end_hour = 13.75
+
+    [[groups.events]]
+    label = "ENGL 133"
+    day = 1
+    start_hour = 13.0
+    end_hour = 14.0
+
+    [[groups.events]]
+    label = "ENGL 133"
+    day = 3
+    start_hour = 13.0
+    end_hour = 14.0
+
+    [[groups.events]]
+    label = "ENGL 133"
+    day = 5
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "HACS 208E"
+    day = 3
+    start_hour = 15.0
+    end_hour = 17.75
+
+[[groups]]
+name = "Annie"
+color = [11, 84, 3]
+
+    [[groups.events]]
+    label = "CHEM 237"
+    day = 1
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "CHEM 237"
+    day = 3
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "CHEM 237"
+    day = 5
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "CHEM 237"
+    day = 2
+    start_hour = 12.5
+    end_hour = 13.25
+
+    [[groups.events]]
+    label = "CHEM 237"
+    day = 3
+    start_hour = 12.5
+    end_hour = 15.0
+
+    [[groups.events]]
+    label = "PHYS 260"
+    day = 1
+    start_hour = 16.0
+    end_hour = 17.25
+
+    [[groups.events]]
+    label = "PHYS 260"
+    day = 3
+    start_hour = 16.0
+    end_hour = 17.25
+
+    [[groups.events]]
+    label = "PHYS 260"
+    day = 2
+    start_hour = 14.0
+    end_hour = 15.0
+
+    [[groups.events]]
+    label = "PHYS 261"
+    day = 4
+    start_hour = 15.0
+    end_hour = 17.25
+
+    [[groups.events]]
+    label = "ENGL 394"
+    day = 2
+    start_hour = 11.0
+    end_hour = 12.25
+
+    [[groups.events]]
+    label = "ENGL 394"
+    day = 4
+    start_hour = 11.0
+    end_hour = 12.25
+
+[[groups]]
+name = "Christian"
+color = [209, 25, 19]
+
+    [[groups.events]]
+    label = "STAT 400"
+    day = 1
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "STAT 400"
+    day = 2
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "STAT 400"
+    day = 3
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "STAT 400"
+    day = 5
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "FIRE 198"
+    day = 4
+    start_hour = 9.5
+    end_hour = 10.25
+
+    [[groups.events]]
+    label = "COMM 107"
+    day = 2
+    start_hour = 14.0
+    end_hour = 15.25
+
+    [[groups.events]]
+    label = "COMM 107"
+    day = 4
+    start_hour = 14.0
+    end_hour = 15.25
+
+    [[groups.events]]
+    label = "CMSC 132"
+    day = 1
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "CMSC 132"
+    day = 1
+    start_hour = 13.0
+    end_hour = 14.0
+
+    [[groups.events]]
+    label = "CMSC 132"
+    day = 3
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "CMSC 132"
+    day = 3
+    start_hour = 13.0
+    end_hour = 14.0
+
+    [[groups.events]]
+    label = "CMSC 132"
+    day = 5
+    start_hour = 12.0
+    end_hour = 13.0
+
+[[groups]]
+name = "Jana"
+color = [255, 222, 33]
+
+    [[groups.events]]
+    label = "MUSC 329W"
+    day = 1
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "MUSC 329W"
+    day = 3
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "MUSC 329W"
+    day = 5
+    start_hour = 12.0
+    end_hour = 13.0
+
+    [[groups.events]]
+    label = "ECON 306"
+    day = 1
+    start_hour = 14.0
+    end_hour = 15.25
+
+    [[groups.events]]
+    label = "ECON 306"
+    day = 3
+    start_hour = 14.0
+    end_hour = 15.25
+
+    [[groups.events]]
+    label = "ECON 306"
+    day = 5
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "MATH 401"
+    day = 2
+    start_hour = 11.0
+    end_hour = 12.25
+
+    [[groups.events]]
+    label = "MATH 401"
+    day = 4
+    start_hour = 11.0
+    end_hour = 12.25
+
+    [[groups.events]]
+    label = "MATH 401"
+    day = 3
+    start_hour = 10.0
+    end_hour = 11.0
+
+    [[groups.events]]
+    label = "MATH 410"
+    day = 2
+    start_hour = 12.5
+    end_hour = 13.75
+
+    [[groups.events]]
+    label = "MATH 410"
+    day = 4
+    start_hour = 12.5
+    end_hour = 13.75
+
+    [[groups.events]]
+    label = "ENGL 394"
+    day = 2
+    start_hour = 15.5
+    end_hour = 16.75
+
+    [[groups.events]]
+    label = "ENGL 394"
+    day = 4
+    start_hour = 15.5
+    end_hour = 16.75

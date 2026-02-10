@@ -1,0 +1,172 @@
+import { CheckBox, ScrollView } from "std-widgets.slint";
+export struct TimeSpan {
+    label: string,
+    group: int,
+    color: color,
+    day: int,
+    start_hours: float,
+    end_hours: float,
+}
+
+component CalendarGrid inherits Rectangle {
+    in property <[TimeSpan]> spans;
+    in property <[bool]> group_visibility;
+
+    property <[string]> days: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    property <float> start_hour: 6.0;
+    property <float> end_hour: 21.0;
+
+    property <length> gutter_width: 60px;
+    property <length> header_height: 35px;
+
+    property <length> day_width: (self.width - gutter_width) / days.length;
+
+    VerticalLayout {
+        spacing: 0px;
+
+        Rectangle {
+            height: header_height;
+            background: #f1f1f1;
+
+            HorizontalLayout {
+                padding-left: gutter_width;
+                for name in days: Text {
+                    text: name;
+                    color: black;
+                    font-weight: 700;
+                    horizontal-alignment: center;
+                    vertical-alignment: center;
+                }
+            }
+        }
+
+        ScrollView {
+            Rectangle {
+                background: white;
+                height: (end_hour - start_hour) * ((root.height - header_height) / (end_hour - start_hour));
+                width: 100%;
+
+                property <length> top_bottom_margin: 20px;
+                property <length> hour_height: (self.height - 2 * top_bottom_margin) / (end_hour - start_hour);
+
+                for i in (end_hour - start_hour + 1): Rectangle {
+                    property <float> current_hour: start_hour + i;
+                    y: i * hour_height + 20px;
+                    height: hour_height;
+                    width: 100%;
+
+                    // Time Label
+                    Text {
+                        x: 0;
+                        width: gutter_width - 10px;
+                        text: current_hour + ":00";
+                        font-size: 12px;
+                        color: #70757a;
+                        horizontal-alignment: right;
+                        y: -6px; // Center text on the line
+                    }
+
+                    // grid line
+                    Rectangle {
+                        x: gutter_width;
+                        y: 0;
+                        height: 1px;
+                        width: parent.width - gutter_width;
+                        background: #eee;
+                    }
+                }
+
+                for span[i] in spans: Rectangle {
+                    visible: group_visibility[span.group];
+                    background: span.color.transparentize(70%);
+                    border-width: 2px;
+                    border-color: span.color;
+                    border-radius: 4px;
+
+                    x: gutter_width + (span.day * day_width);
+                    y: (span.start_hours - start_hour) * hour_height + top_bottom_margin;
+                    width: day_width;
+                    height: (span.end_hours - span.start_hours) * hour_height;
+
+                    Text {
+                        text: span.label;
+                        font-size: 11px;
+                        color: black;
+                        overflow: elide;
+                        x: 4px;
+                        y: 2px;
+                    }
+                }
+                // PLACEHOLDER FOR EVENTS (Absolute Positioning)
+                // This is where you will eventually put your TimeSpan rectangles
+                // e.g., y: (event.start - start_hour) * hour_height
+            }
+        }
+    }
+}
+
+component SideBar inherits Rectangle {
+    width: 200px;
+    background: #f8f9fa;
+
+    in property <[string]> names;
+    in-out property <[bool]> group_visibility;
+
+    VerticalLayout {
+        alignment: start;
+        Rectangle {
+            height: 36px;
+            Text {
+                text: "Toggle Groups";
+                font-size: 16px;
+                font-weight: 700;
+                color: black;
+                vertical-alignment: center;
+            }
+        }
+
+        for label[i] in names: Rectangle {
+            height: 32px;
+            HorizontalLayout {
+                padding-left: 18px;
+                spacing: 10px;
+                CheckBox {
+                    checked: group_visibility[i];
+                    toggled => {
+                        group_visibility[i] = self.checked;
+                    }
+                }
+
+                Text {
+                    text: label;
+                    color: black;
+                    font-size: 14px;
+                    vertical-alignment: center;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+export component MainWindow inherits Window {
+    in property <[TimeSpan]> spans;
+    in property <[string]> names;
+    in property <[bool]> group_visibility;
+
+    title: "Calendar";
+    preferred-width: 900px;
+    preferred-height: 700px;
+
+    HorizontalLayout {
+        SideBar {
+            names: names;
+            group_visibility: group_visibility;
+        }
+
+        CalendarGrid {
+            spans: spans;
+            group_visibility: group_visibility;
+        }
+    }
+}
