@@ -82,7 +82,7 @@ color = [255, 0, 127]
 
 [[groups]]
 name = "Juliana"
-color = [206, 74, 255]
+color = [101, 84, 255]
 
     [[groups.events]]
     label = "KNES 285"
